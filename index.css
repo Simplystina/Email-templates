@@ -1,0 +1,210 @@
+@font-face {
+    font-family: 'satoshi';
+    src: local('MyFont'), url(./Fonts/OTF/Satoshi-Regular.otf) format('woff');
+    
+  }
+  @font-face {
+    font-family: 'SatoshiBold';
+    src: local('MyFont'), url(./Fonts/OTF/Satoshi-Medium.otf) format('woff');
+    
+  }
+  @font-face {
+    font-family: 'SatoshiBolder';
+    src: local('MyFont'), url(./Fonts/OTF/Satoshi-Bold.otf) format('woff');
+    
+  }
+
+
+body{
+    background-color: #FEFAFE;
+    font-family: "satoshi";
+}
+
+.container{
+    display: flex;
+   justify-content: center;
+    width: 100%;
+    height: 100%;
+}
+.inner_container{
+    width: 80%;
+   
+}
+.inner_container2{
+    padding: 60px 50px 30px 60px;
+}
+
+.logo{
+    object-fit: contain;
+    display: flex;
+    margin: 0 auto;
+    width: 100%;
+}
+.inner_container_desc{
+    background: #FFFFFF;
+    margin: 0;
+}
+.inner_container_desc_heading{
+    color: #540A45;
+    font-size: 19px;
+    font-weight: 700;
+    font-family: "satoshiBolder";
+}
+.inner_container_desc_text{
+    color: #33343D;
+    font-size: 18px;
+    font-weight: 400;
+}
+.inner_container_desc_money{
+    font-weight: 500;
+    font-family: "satoshiBold";
+}
+
+.inner_container_info{
+    background: #FFFFFF;
+    margin-top: 10px;
+    padding-top: 50px;
+    padding-bottom: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.inner_container_desc_text2{
+    color: #33343D;
+    font-size: 16px;
+    font-weight: 400;
+}
+.app_container{
+    display: flex;
+    justify-content: space-between;
+ 
+    
+}
+.img_applestore
+.img_googlestore{
+    width: 100%;
+    object-fit: contain;
+  
+    
+}
+.img_applestore{
+    margin: 10px;
+
+}
+.inner_container_icons{
+    margin: 30px auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.icon_container{
+    border-radius: 50%;
+    background-color: #F8F1F6;
+    width: 32px;
+    height: 32px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #5B2E4F;
+    font-size: 20px;
+    margin-top: 30px;
+}
+.horizontal_line{
+    border: 0.5px solid #CECECD;
+    width: 100%;
+
+}
+.footer_text{
+    font-weight: 500;
+    font-size: 15px;
+    color: #33343D;
+    line-height: 20.25px;
+    padding: 30px 0;
+}
+
+@media screen and (max-width: 700px){
+    .inner_container_info{
+        flex-direction: column;
+    }
+    .inner_container_second_socials{
+        justify-content:left;
+        width: 50%;
+    }
+    .app_container{
+        margin: 0;
+    }
+    .img_applestore{
+        width: 100%;
+        margin: 0px;
+    
+    }
+    .img_googlestore{
+        width: 100%;
+        margin-left: 5px;
+    }
+    .inner_container_icons{
+        margin: 10px auto;
+    }
+    .inner_container_info{
+        
+        padding-bottom: 0px;
+    }
+    .inner_container{
+        width: 90%;
+       
+    }
+    .inner_container2{
+        padding: 30px 30px;
+    }
+    .footer_text{
+
+        line-height: 24.25px;
+        padding: 10px 0;
+    }
+}
+
+@media screen and (max-width: 470px) {
+    .inner_container_second_socials{
+        width: 70%;
+    }
+    .small-logo{
+        display: block;
+    }
+    .big-logo{
+       
+        display: none;
+    }
+    .inner_container{
+        width: 100%;
+       
+    }
+    .inner_container2{
+        padding: 10px;
+    }
+    .inner_container_desc_heading{
+        font-size: 16px;
+    }
+    .inner_container_desc_text{
+        font-size: 16px;
+    }
+    .inner_container_info{
+        
+        margin-top: 0px;
+        padding-top: 20px;
+        padding-bottom: 0px;
+    }
+    
+}
+@media screen and (min-width: 470px) {
+    .small-logo{
+        display: none;
+    }
+    .big-logo{
+        display: block;
+    }
+}
+@media screen and (max-width: 350px) {
+    .inner_container_second_socials{
+        width: 80%;
+    }
+}
